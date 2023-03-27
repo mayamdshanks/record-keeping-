@@ -14,7 +14,8 @@ function App() {
   const [email, setemail] = useState("");
   const [data, setdata] = useState([]);
 
-  const addData = () => {
+  const addData = (event) => {
+    event.preventDefault();
     setdata([...data, { name, email }]);
 
     setname("");
